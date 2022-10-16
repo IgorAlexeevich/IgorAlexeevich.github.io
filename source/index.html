@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб-разработка</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
 
   <body>
     <header class="header">
@@ -35,23 +35,24 @@
         </ul>
       </nav>
     </header>
-
+  
     <section class="main">
       <div class="main-container">
-        <h1 class="title">
+        <h1 class="main__title">
           Привет <br />
           я Андрей Браун
         </h1>
         <p class="main__subtitle">Веб-разработчик</p>
-        <!--
-        <a target="_blank" ref="#" class="button"> Обо мне</a>
-        <a target="_blank" ref="#" class="button"> мои работы</a> -->
+
+        <a target="_blank" ref="#" class="main__button"> Обо мне</a>
+        <a target="_blank" ref="#" class="main__button"> мои работы</a>
       </div>
     </section>
 
     <section class="about">
-      <h2 class="title">Обо мне</h2>
-      <img src="./img/Пареньmini.jpg" alt="парень" />
+      <h2 class="about-title title">Обо мне</h2>
+   
+      <img class="about__img" src="./img/Пареньmini.jpg" alt="парень" />
       <p class="about-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
         numquam at amet suscipit et sunt officiis quae aperiam omnis esse?
@@ -60,59 +61,67 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
         numquam at amet suscipit et sunt officiis quae aperiam omnis esse?
       </p>
+      <a class="about__link" href="#" download="">Скачать резюме</a>
     </section>
 
     <section class="skills">
-      <h2 class="title">Что я умею</h2>
-      <div class="skills-item">
-        <img src="./img/logo/laptop.svg" alt="" />
-        <h3 class="skills-item__title">Веб-дизайн</h3>
-        <p class="skill-item__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-          distinctio?
-        </p>
-      </div>
-      <div class="skills-item">
-        <img src="./img/logo/programming.svg" alt="" />
-        <h3 class="title">Разработка</h3>
-        <p class="skill-item__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-          distinctio?
-        </p>
-      </div>
-      <div class="skills-item">
-        <img src="./img/logo/rocket.svg" alt="" />
-        <h3 class="skills-item__title">Сео-оптимизация</h3>
-        <p class="skill-item__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-          distinctio?
-        </p>
-      </div>
-      <div class="skills-item">
-        <img src="./img/logo/megaphone.svg" alt="" />
-        <h3 class="title">Маркетинг</h3>
-        <p class="skill-item__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-          distinctio?
-        </p>
+      <h2 class="skills__title title">Что я умею</h2>
+      <hr />
+      <div class="skills-container">
+        <div class="skills-item">
+          <img src="./img/logo/laptop.svg" alt="" />
+          <h3 class="skills-item__title">Веб-дизайн</h3>
+          <p class="skill-item__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+            distinctio?
+          </p>
+        </div>
+        <div class="skills-item">
+          <img src="./img/logo/programming.svg" alt="" />
+          <h3 class="skills-item__title">Разработка</h3>
+          <p class="skill-item__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+            distinctio?
+          </p>
+        </div>
+        <div class="skills-item">
+          <img src="./img/logo/rocket.svg" alt="" />
+          <h3 class="skills-item__title">Сео-оптимизация</h3>
+          <p class="skill-item__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+            distinctio?
+          </p>
+        </div>
+        <div class="skills-item">
+          <img src="./img/logo/megaphone.svg" alt="" />
+          <h3 class="skills-item__title">Маркетинг</h3>
+          <p class="skill-item__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+            distinctio?
+          </p>
+        </div>
+        <div class="clear"></div>
       </div>
     </section>
 
     <section class="cases">
       <div class="cases-container">
         <div class="cases__contacts">
-          <h2 class="title">Кейсы</h2>
+          <h2 class="cases-title title">Кейсы</h2>
+          <hr />
           <p class="cases__subtitle">Lorem ipsum dolor sit amet.</p>
-          <img src="./img/кейсы.jpg" alt="" />
-          <h3 class="cases__title">Client</h3>
-          <p>какая-то комапания</p>
-          <h3 class="cases__title"></h3>
-          <p>http://www.somedomain.com</p>
-          <a class="cases__link" href="">VISIT LIVE SITE</a>
+          <img class="cases__img" src="./img/кейсы.jpg" alt="" />
+          <div class="cases__client">
+            <h3 class="cases__title">Client</h3>
+            <p class="cases__text">какая-то комапания</p>
+            <h3 class="cases__title">WEBSITE</h3>
+            <p class="cases__text">http://www.somedomain.com</p>
+            <a class="cases__link" href="">VISIT LIVE SITE</a>
+          </div>
         </div>
         <div class="project-name">
           <h3 class="project-name__title">Название проекта</h3>
-          <p>
+          <p class="project-name__text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
             voluptas laboriosam error tenetur quibusdam minima sed, a, libero
             voluptatem quae, eum excepturi labore rerum asperiores maiores vitae
@@ -120,6 +129,7 @@
           </p>
         </div>
       </div>
+      <div class="clear"></div>
     </section>
 
     <section class="price">
@@ -142,38 +152,54 @@
         <option value="price2">Выберите пункт2</option>
         <option value="price3">Выберите пункт3</option>
       </select>
-      <p>Сроки</p>
-      <p>Стоимость</p>
+      <div class="price__footer">
+        <div class="days">
+          <p class="text">Сроки</p>
+          <p class="digit">0</p>
+          <div class="clear"></div>
+        </div>
+
+        <div class="price">
+          <p class="text">Стоимость</p>
+          <p class="digit">0</p>
+          <div class="clear"></div>
+        </div>
+      </div>
     </section>
 
     <section class="static">
-      <h2 class="title">немного статистики</h2>
-      <div class="static__item">
-        <img src="./img/logo/smile.svg" alt="" />
-        <p class="static__number">120</p>
-        <p class="static__number">Счастливых клиентов</p>
+      <h2 class="static-title">немного статистики</h2>
+      <hr />
+      <div class="static__row">
+        <div class="static__item">
+          <img src="./img/logo/smile.svg" alt="" />
+          <p class="static__number">120</p>
+          <p class="static__number">Счастливых клиентов</p>
+        </div>
+        <div class="static__item">
+          <img src="./img/logo/tick.svg" alt="" />
+          <p class="static__number">4.600</p>
+          <p class="static__number">Часов работы</p>
+        </div>
+        <div class="static__item">
+          <img src="./img/logo/programming.svg" alt="" />
+          <p class="static__number">340</p>
+          <p class="static__number">Проэектов завершено</p>
+        </div>
+        <div class="static__item">
+          <img src="./img/logo/kubok.svg" alt="" />
+          <p class="static__number">23</p>
+          <p class="static__number">Нагрда получено</p>
+        </div>
       </div>
-      <div class="static__item">
-        <img src="./img/logo/tick.svg" alt="" />
-        <p class="static__number">4.600</p>
-        <p class="static__number">Часов работы</p>
-      </div>
-      <div class="static__item">
-        <img src="./img/logo/programming.svg" alt="" />
-        <p class="static__number">340</p>
-        <p class="static__number">Проэектов завершено</p>
-      </div>
-      <div class="static__item">
-        <img src="./img/logo/kubok.svg" alt="" />
-        <p class="static__number">23</p>
-        <p class="static__number">Нагрда получено</p>
-      </div>
+      <div class="clear"></div>
     </section>
 
     <section class="reviews">
-      <h2 class="title">Отзывы</h2>
+      <h2 class="reviews__title">Отзывы</h2>
+      <hr />
+      <img class="reviews__img" src="/img/фоткаотзывы.png" alt="" />
       <div class="review__item">
-        <img class="review__icon" src="./img/фотка отзывы.png" alt="" />
         <p class="review__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
           hic impedit atque. Commodi dicta architecto recusandae. Reiciendis
@@ -185,11 +211,12 @@
     </section>
 
     <section class="contacts">
-      <h2 class="title">Мои контакты</h2>
+      <h2 class="contacts-title title">Мои контакты</h2>
+      <hr />
       <div class="container">
         <p class="contacts__text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-          praesentium totam ipsa amet provident, rem temporibus ut, quisquam
+          praesentium totam ipsa
         </p>
         <div class="contacts__row">
           <div class="adress">
@@ -203,27 +230,36 @@
             <a href="mailto:info@companyname.com">info@companyname.com</a>
           </div>
           <div class="phone">
-            <img src="./img/logo/phone.svg" alt="" />
+            <img class="phone__logo" src="./img/logo/phone.svg" alt="" />
             <a href="tel:799999999">+7 999 999-99-99</a>
           </div>
         </div>
-        <h2 class="title"> Оставте мне сообщение</h2>
+        <div class="clear"></div>
+        <h2 class="contacts-title title">Оставте мне сообщение</h2>
         <form class="form" action="#" method="post">
-          <input class="input" type="text" name="username" placeholder="Имя">
-          <input class="input" type="email" name="email" placeholder="Email">
-          <textarea class="textarea" name="message" id="text" cols="30" rows="10" placeholder="сообщение"></textarea>
+          <input class="input" type="text" name="username" placeholder="Имя" />
+          <input class="input" type="email" name="email" placeholder="Email" />
+          <textarea
+            class="textarea"
+            name="message"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="сообщение"
+          ></textarea>
           <button class="button" type="submit">Отправить</button>
         </form>
       </div>
     </section>
 
     <section class="map">
-      <img src="./img/карта.png" alt="">
+      <img src="./img/карта.png" alt="" />
     </section>
 
-
     <footer class="footer">
-      <small>Copyright © 2021 Андрей Браун. Design by Web</small>
+      <div class="footer__container">
+        <small>Copyright © 2021 Андрей Браун. Design by Web</small>
+      </div>
     </footer>
   </body>
 </html>
